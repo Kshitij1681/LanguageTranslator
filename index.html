@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+   
+   <title>LANGUAGE TRANSLATOR</title>
+   <link rel = "icon" href = "http://icons.iconarchive.com/icons/marcus-roberto/google-play/512/Google-Translate-icon.png" type = "image/x-icon">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome CDN Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  
+    <body>
+        <div class="container">
+            <div class="wrapper">
+                <div class="text-input">
+                    <textarea spellcheck="true" class="from-text" placeholder="Enter Text"></textarea>
+                    <textarea spellcheck="false" class="to-text" placeholder="Translation"></textarea>
+                </div>
+                    <!--translator controls-->
+                    <ul class="controls">
+                    <li class="row from">
+                        <div class="icons">
+                            <i id="from" class="fa-solid fa-microphone" title="speak"></i>
+                            <i id="from" class="fa-solid fa-volume-high" title="listen"></i>
+                            <i id="from" class="fa-solid fa-copy" title="copy"></i>
+                        </div>
+                        <select title="choose language"></select>
+                    </li>
+                    <li class="exchange"><i class="fa-solid fa-right-left" title="swap languages"></i></li>
+
+                    <li class="row to">
+                        <select title="choose language"></select>
+                        <div class="icons">
+                            <i id="to" class="fa-solid fa-volume-high" title="listen"></i>
+                            <i id="to" class="fa-solid fa-copy" title="copy" ></i>
+                        </div>
+                    </li>
+                    </ul>
+            </div>
+            <button>Translate Text</button>
+        </div>
+
+        
+        <script src="./countries_lang.js"></script>
+        <script src="./script.js"></script>  
+    </body>
+</html>
